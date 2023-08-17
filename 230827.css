@@ -6,6 +6,7 @@ html {
     display: block;
     color: #2965FF;
     font-size: 16px;
+    position: relative;
 }
 /* @font-face {
     font-family: 'D2Coding';
@@ -17,11 +18,6 @@ html {
 a {
     text-decoration: none;
     color: #2965FF;
-}
-
-span {
-    color: #b4c9ff;
-    ;
 }
 
 body {
@@ -39,9 +35,13 @@ header {
     top:0;
     z-index: 9;
 }
+header p {
+    color:#2965FF;
+}
 
 .container {
-    width:100%; height:1150px;
+    width:100%; height:800px;
+
 }
 
 .container .box1 {
@@ -64,32 +64,25 @@ header {
     font-weight: bold;
     cursor: pointer;
 }
-
 .container .box2 {
     width: 1128px; height:100%;
     padding:0 20px; margin:0;
     vertical-align: middle;
     line-height: 200%;
+    color:#333;
     position: absolute;
     top:200px; left:297px;
 }
 
-.container .box2 .list {
-    margin:0; padding:0;
-    list-style: none;}
-
-.container .box2 .list li {
-    margin:12px 0;
+.container .box2 .img {
+    width:100%; height:300px;
 }
 
-.container .box2 .list li:first-child {
-    margin-top:0;
+.container .box2 .img img {
+    width:600px; height:800px;
+    object-fit:contain;
 }
 
-
-.container .box2 .list li:hover {
-    text-decoration:underline;
-}
 
 footer {
     width:100%;
